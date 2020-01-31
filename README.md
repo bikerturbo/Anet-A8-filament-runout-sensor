@@ -44,4 +44,4 @@ Originální deska Anet A8 + filament runout sensor + Marlin 1.1.9
     
    E/ No a nyní již stačí jenom v Arduinu otevřít soubor Marlin.ino, stisknout tlačítko "Nahrát".
    
-   F/ A je hotovo :-D 
+   # A je hotovo :-D 
