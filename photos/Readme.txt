@@ -1,0 +1,1 @@
+Takhle to spáchal RUZA.
