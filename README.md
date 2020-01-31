@@ -32,7 +32,8 @@ Originální deska Anet A8 + filament runout sensor + Marlin 1.1.9
         compiler.cpp.extra_flags=-fno-tree-scev-cprop -fno-split-wide-types -Wl,--relax -mcall-prologues
         compiler.c.elf.extra_flags=-Wl,--relax
      
-     A uložíte. Toto nastavení (zdroj: https://thborges.github.io/blog/marlin/2019/01/07/reducing-marlin-binary-size.html) způsobí zmenšení výledného projektu pro nahrání do mcu.
+     
+   A uložíte. Toto nastavení (zdroj: https://thborges.github.io/blog/marlin/2019/01/07/reducing-marlin-binary-size.html) způsobí zmenšení výledného projektu pro nahrání do mcu.
    E/ Upravíme nastavení Marlina. Bude to strohé. Nejprve uvedu název souboru a poté co se má jak změnit :-D
       
       Configuration.h -> 
