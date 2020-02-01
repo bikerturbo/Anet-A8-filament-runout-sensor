@@ -42,6 +42,6 @@ Originální deska Anet A8 + filament runout sensor + Marlin 1.1.9
      
     A uložíte. Toto nastavení (zdroj: https://thborges.github.io/blog/marlin/2019/01/07/reducing-marlin-binary-size.html) způsobí zmenšení výledného projektu pro nahrání do mcu.
     
-   E/ No a nyní již stačí jenom v Arduinu otevřít soubor Marlin.ino, stisknout tlačítko "Nahrát".
+   E/ No a nyní již stačí jenom v Arduinu otevřít soubor Marlin.ino a stisknout tlačítko "Nahrát".
    
    # A je hotovo :-D 
