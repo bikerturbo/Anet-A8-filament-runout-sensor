@@ -45,3 +45,7 @@ Originální deska Anet A8 + filament runout sensor + Marlin 1.1.9
    E/ No a nyní již stačí jenom v Arduinu otevřít soubor Marlin.ino a stisknout tlačítko "Nahrát".
    
    # A je hotovo :-D 
+
+## Popis některých úprav
+
+Důležité nastavení je určitě retrakce při ztrátě filamentu (vysune filament z trisky) a množství vytlačeného filamentu po jeho znovu zavedení. Toto nastavení najdete v souboru **Configuration_adv.h** za odkomentovaným řádkem **#define ADVANCED_PAUSE_FEATURE**
