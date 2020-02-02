@@ -197,12 +197,11 @@
     #define STD_ENCODER_STEPS_PER_MENU_ITEM 1
   #endif
 #else
-  //#define SERVO0_PIN       27 // RUZA filament runout
+  //#define SERVO0_PIN       27 // RUZA commented
 #endif
 
 
-// ### RUZA filament runout
-// define digital pin 4 for the filament runout sensor.
+// RUZA new code - define digital pin 4 for the filament runout sensor
 #ifndef FIL_RUNOUT_PIN
   #define FIL_RUNOUT_PIN    27
 #endif

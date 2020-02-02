@@ -36,7 +36,7 @@
 
 #define DISPLAY_CHARSET_ISO10646_1
 
-#define WELCOME_MSG                         MACHINE_NAME _UxGT(" pripravena")
+#define WELCOME_MSG                         MACHINE_NAME _UxGT(" pripravena") // RUZA change text
 #define MSG_BACK                            _UxGT("Zpet")
 #define MSG_SD_INSERTED                     _UxGT("Karta vlozena")
 #define MSG_SD_REMOVED                      _UxGT("Karta vyjmuta")
@@ -70,7 +70,7 @@
 #define MSG_PREHEAT_1_END                   MSG_PREHEAT_1 _UxGT(" hotend")
 #define MSG_PREHEAT_1_BEDONLY               MSG_PREHEAT_1 _UxGT(" podloz")
 #define MSG_PREHEAT_1_SETTINGS              MSG_PREHEAT_1 _UxGT(" nast")
-#define MSG_PREHEAT_2                       _UxGT("Zahrat PET") // ABS
+#define MSG_PREHEAT_2                       _UxGT("Zahrat PET") // ABS // RUZA change text
 #define MSG_PREHEAT_2_N                     MSG_PREHEAT_2 _UxGT(" ")
 #define MSG_PREHEAT_2_ALL                   MSG_PREHEAT_2 _UxGT(" vse")
 #define MSG_PREHEAT_2_END                   MSG_PREHEAT_2 _UxGT(" hotend")

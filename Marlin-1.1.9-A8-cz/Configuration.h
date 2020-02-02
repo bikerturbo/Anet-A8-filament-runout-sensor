@@ -133,7 +133,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME " Anetka " //"3D Printer"
+#define CUSTOM_MACHINE_NAME " Anetka " //"3D Printer" // RUZA uncommented and change name
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -619,7 +619,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 100 } 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,  100, 400, 95} // RUZA SkyNet3D
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,  100, 400, 95} // RUZA change values (SkyNet3D) - testing
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -635,7 +635,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 //#define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 100, 10000 }
-#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 } // RUZA SkyNet3D
+#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 } // RUZA change values (SkyNet3D) - testing
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -648,7 +648,7 @@
 #define DEFAULT_ACCELERATION          400     // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
 //#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
-#define DEFAULT_TRAVEL_ACCELERATION   400 // RUZA SkyNet3D
+#define DEFAULT_TRAVEL_ACCELERATION   400// RUZA change values (SkyNet3D) - testing
 
 /**
  * Default Jerk (mm/s)
@@ -658,8 +658,8 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 20.0 //10.0 // RUZA SkyNet3D
-#define DEFAULT_YJERK                 20.0 //10.0 // RUZA SkyNet3D
+#define DEFAULT_XJERK                 20.0 //10.0 // RUZA change values (SkyNet3D) - testing
+#define DEFAULT_YJERK                 20.0 //10.0 // RUZA change values (SkyNet3D) - testing
 #define DEFAULT_ZJERK                  0.3
 #define DEFAULT_EJERK                  5.0
 
@@ -938,10 +938,10 @@
  * For other boards you may need to define FIL_RUNOUT_PIN, FIL_RUNOUT2_PIN, etc.
  * By default the firmware assumes HIGH=FILAMENT PRESENT.
  */
-#define FILAMENT_RUNOUT_SENSOR // RUZA
+#define FILAMENT_RUNOUT_SENSOR // RUZA uncommented
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_INVERTING true // set to true to invert the logic of the sensor. // RUZA
+  #define FIL_RUNOUT_INVERTING true // set to true to invert the logic of the sensor. //false // RUZA change values
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   #define FILAMENT_RUNOUT_SCRIPT "M600"
 #endif
@@ -1267,12 +1267,12 @@
 // @section temperature
 
 // Preheat Constants
-#define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     45
+#define PREHEAT_1_TEMP_HOTEND 208 // RUZA change values
+#define PREHEAT_1_TEMP_BED     45 // RUZA change values
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED     70
+#define PREHEAT_2_TEMP_HOTEND 245 // RUZA change values
+#define PREHEAT_2_TEMP_BED     75 // RUZA change values
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
@@ -1286,7 +1286,7 @@
  *    P1  Raise the nozzle always to Z-park height.
  *    P2  Raise the nozzle by Z-park amount, limited to Z_MAX_POS.
  */
-#define NOZZLE_PARK_FEATURE // RUZA
+#define NOZZLE_PARK_FEATURE // RUZA uncommented
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z }
@@ -1405,7 +1405,7 @@
  *
  * :{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cn':'Chinese', 'cz':'Czech', 'cz_utf8':'Czech (UTF8)', 'de':'German', 'el':'Greek', 'el-gr':'Greek (Greece)', 'es':'Spanish', 'es_utf8':'Spanish (UTF8)', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French', 'fr_utf8':'French (UTF8)', 'gl':'Galician', 'hr':'Croatian', 'it':'Italian', 'kana':'Japanese', 'kana_utf8':'Japanese (UTF8)', 'nl':'Dutch', 'pl':'Polish', 'pt':'Portuguese', 'pt-br':'Portuguese (Brazilian)', 'pt-br_utf8':'Portuguese (Brazilian UTF8)', 'pt_utf8':'Portuguese (UTF8)', 'ru':'Russian', 'sk_utf8':'Slovak (UTF8)', 'tr':'Turkish', 'uk':'Ukrainian', 'zh_CN':'Chinese (Simplified)', 'zh_TW':'Chinese (Taiwan)', 'test':'TEST' }
  */
-#define LCD_LANGUAGE cz
+#define LCD_LANGUAGE cz //en // RUZA change values
 
 /**
  * LCD Character Set
