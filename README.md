@@ -33,14 +33,13 @@ Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament ru
       Instalaci Arduina neřeším, na to je asi milion návodů na netu o:-)
       
    D/ Upravit nastavení kompilátoru arduina pro zmenšení výsledného programu, aby se nám vešel do trapně malého mcu na originální desce s ATMega1284p :-/
-      Přejdete do složky "arduino/hardware/anet/avr/" a tam do souboru "platform.local.txt" (který je prázdný) vložíte tento text:
-      
-        compiler.c.extra_flags=-fno-tree-scev-cprop -fno-split-wide-types -Wl,--relax -mcall-prologues
-        compiler.cpp.extra_flags=-fno-tree-scev-cprop -fno-split-wide-types -Wl,--relax -mcall-prologues
-        compiler.c.elf.extra_flags=-Wl,--relax
-     
-     
-    A uložíte. Toto nastavení (zdroj: https://thborges.github.io/blog/marlin/2019/01/07/reducing-marlin-binary-size.html) způsobí zmenšení výledného projektu pro nahrání do mcu.
+      Přejdete do složky "arduino/hardware/anet/avr/" a tam do souboru "platform.local.txt" (který je prázdný) vložíte a uložíte tento text:
+       
+       compiler.c.extra_flags=-fno-tree-scev-cprop -fno-split-wide-types -Wl,--relax -mcall-prologues
+       compiler.cpp.extra_flags=-fno-tree-scev-cprop -fno-split-wide-types -Wl,--relax -mcall-prologues
+       compiler.c.elf.extra_flags=-Wl,--relax
+       
+   Toto nastavení (zdroj: https://thborges.github.io/blog/marlin/2019/01/07/reducing-marlin-binary-size.html) způsobí zmenšení výledného projektu pro nahrání do mcu.
     
    E/ No a nyní již stačí jenom v Arduinu otevřít soubor Marlin.ino a stisknout tlačítko "Nahrát".
    
