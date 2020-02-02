@@ -3,11 +3,11 @@
 
 Only in czech language! Now o:-) 
 
+Návod je použitelný na originální desku Anet A8 (bootloader jsem nemusel nahrávat) a originální displej LCD2004.
+Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament runout sensor.
 
-Originální deska Anet A8 + filament runout sensor + Marlin 1.1.9
 
-
-# Postup
+## Postup úpravy ##
 
 
 1/ Na desce se musí připravit nepoužitý pin. Je to pin číslo 3, na konektoru pro LCD2004.
@@ -44,8 +44,9 @@ Originální deska Anet A8 + filament runout sensor + Marlin 1.1.9
     
    E/ No a nyní již stačí jenom v Arduinu otevřít soubor Marlin.ino a stisknout tlačítko "Nahrát".
    
-   # A je hotovo :-D 
+   ### A je hotovo :-D
 
-## Popis některých úprav
+## Popis některých nastavení marlina
 
-Důležité nastavení je určitě retrakce při ztrátě filamentu (vysune filament z trisky) a množství vytlačeného filamentu po jeho znovu zavedení. Toto nastavení najdete v souboru **Configuration_adv.h** za odkomentovaným řádkem **#define ADVANCED_PAUSE_FEATURE**
+Důležité nastavení je určitě retrakce při ztrátě filamentu (vysune filament z trisky) a množství vytlačeného filamentu po jeho znovu zavedení. 
+Toto nastavení najdete v souboru **Configuration_adv.h** za odkomentovaným řádkem **#define ADVANCED_PAUSE_FEATURE**
