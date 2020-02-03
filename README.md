@@ -17,7 +17,7 @@ Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament ru
    Jelikož je ale k pinu č.3 připojena i tzv. BUILDIN_LED, je na pinu v klidovém stavu (pin není spojen s GND) napětí pouze cca 1.6 V a ne požadovaných 5 V.
    Tento problém se hravě vyřeší připojením rezistoru 240 Ohmu mezi pin č.3 a pin č.2 (+5V).
    
-   Vše je fotograficky zdokumentováno ve složce "[photos](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/tree/master/photos)".
+   Vše je zdokumentováno ve složce "[photos](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/tree/master/photos)".
    
 2. K připájenému konektoru nebo vodičům, připojte "filament runout sensor" tak, že pokud je filament přítomen, je kontakt snímače sepnut. Pokud dojde ke ztrátě filamentu, je kontakt snímače rozepnut.
    Toto zapojení eliminuje poruchu snímače. Tzn, že pokud je snímač odpojen vlivem ulomeného vodiče nebo nepozorností obsluhy, tiskárna to považuje za strátu filamentu a dojde k zastavení tisku ;-)
@@ -30,7 +30,7 @@ Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament ru
    
    - Stažený soubor rozbalte do vaší složky s projekty Arduino.
    
-   - Z mé složky "[Marlin-1.1.9-A8-cz](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/tree/master/Marlin-1.1.9-A8-cz)" si stáhněte všechny soubory a vložte je do vaší složky "Marlin" ve vaší složce s arduino projekty. Vaše původní soubory je dobré nemazat ale přejmenovat, například na xxxx-ORG.xxx.  
+   - Z mé složky "[Marlin-1.1.9-A8-cz](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/tree/master/Marlin-1.1.9-A8-cz)" si stáhněte všechny soubory a vložte je do vaší složky "Marlin" ve složce s arduino projekty. Vaše původní soubory je dobré nemazat ale přejmenovat, například na xxxx-ORG.xxx.  
    
    - [Zde](https://3dfactory.cz/wp-content/uploads/2018/05/anet-board-master.zip) nebo [zde](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/blob/master/anet-board-master.zip) si stáhněte "ovladač" Anet desky do arduina.
      Po stažení a rozbalení souboru, zkopírujte složku "anet" do složky "/arduino/harware/".
@@ -50,8 +50,8 @@ Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament ru
     
     Kompilace trvá kapku déle. Pokud je vše OK, vypíše vám arduino podobné hlášení:
     
-               Projekt zabírá 112814 bytů (88%)  úložného místa pro program. Maximum je 126976 bytů.
-               Globalní proměnné využívají 4169 bytů dynamické paměti.
+               Projekt zabírá 112740 bytů (88%)  úložného místa pro program. Maximum je 126976 bytů.
+               Globalní proměnné využívají 4171 bytů dynamické paměti.
                
     V tuto chvíli připojte USB kabel k desce Anet (tiskárna musí být puštěná).
     
