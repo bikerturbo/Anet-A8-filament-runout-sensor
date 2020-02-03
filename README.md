@@ -17,7 +17,7 @@ Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament ru
    Jelikož je ale k pinu č.3 připojena i tzv. BUILDIN_LED, je na pinu v klidovém stavu (pin není spojen s GND) napětí pouze cca 1.6 V a ne požadovaných 5 V.
    Tento problém se hravě vyřeší připojením rezistoru 240 Ohmu mezi pin č.3 a pin č.2 (+5V).
    
-   Vše je fotograficky zdokumentováno ve složce "[photos](Anet-A8-filament-runout-sensor/photos/)".
+   Vše je fotograficky zdokumentováno ve složce "[photos](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/tree/master/photos)".
    
 2. K připájenému konektoru nebo vodičům, připojte "filament runout sensor" tak, že pokud je filament přítomen, je kontakt snímače sepnut. Pokud dojde ke ztrátě filamentu, je kontakt snímače rozepnut.
    Toto zapojení eliminuje poruchu snímače. Tzn, že pokud je snímač odpojen vlivem ulomeného vodiče nebo nepozorností obsluhy, tiskárna to považuje za strátu filamentu a dojde k zastavení tisku ;-)
@@ -30,12 +30,12 @@ Po dokončení budete mít ve vaší Anetce Marlin 1.1.9 a funkční filament ru
    
    - Stažený soubor rozbalte do vaší složky s projekty Arduino.
    
-   - Z mé složky "[Marlin-1.1.9-A8-cz](Anet-A8-filament-runout-sensor/Marlin-1.1.9-A8-cz/)" si stáhněte všechny soubory a vložte je do vaší složky "Marlin" ve vaší složce s arduino projekty. Vaše původní soubory je dobré nemazat ale přejmenovat, například na xxxx-ORG.xxx.  
+   - Z mé složky "[Marlin-1.1.9-A8-cz](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/tree/master/Marlin-1.1.9-A8-cz)" si stáhněte všechny soubory a vložte je do vaší složky "Marlin" ve vaší složce s arduino projekty. Vaše původní soubory je dobré nemazat ale přejmenovat, například na xxxx-ORG.xxx.  
    
-   - [Zde](https://3dfactory.cz/wp-content/uploads/2018/05/anet-board-master.zip) nebo [zde](Anet-A8-filament-runout-sensor/anet-board-master.zip) si stáhněte "ovladač" Anet desky do arduina.
+   - [Zde](https://3dfactory.cz/wp-content/uploads/2018/05/anet-board-master.zip) nebo [zde](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/blob/master/anet-board-master.zip) si stáhněte "ovladač" Anet desky do arduina.
      Po stažení a rozbalení souboru, zkopírujte složku "anet" do složky "/arduino/harware/".
      
-   - Zcela určitě budete potřebovat i ovladače pro windows. Na Anet desce je k připojení k PC použit obvod z řady CH34x. Ovladače si můžete stáhnout tady u mě a nebo kdekoliv jinde na netu. Linux ovladače nepotřebuje, má je v jádru již připravené ;-)
+   - Zcela určitě budete potřebovat i ovladače pro windows. Na Anet desce je k připojení k PC použit obvod z řady CH34x. Ovladače si můžete stáhnout [tady](https://github.com/bikerturbo/Anet-A8-filament-runout-sensor/blob/master/CH34x_Install_Windows_v3_4.zip) u mě a nebo kdekoliv jinde na netu. Linux ovladače nepotřebuje, má je v jádru již připravené ;-)
      
    - Nyní upravte nastavení kompilátoru arduina pro zmenšení výsledného programu, aby se vám vešel do paměti mcu na originální desce s ATMega1284p. Přejděte do složky "/arduino/hardware/anet/avr/" a do souboru "platform.local.txt" (který je zatím prázdný) vložte a uložte tento text:
    
